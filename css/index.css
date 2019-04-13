@@ -318,6 +318,10 @@ footer {
   background-color: #22283A;
   text-align: center;
 }
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: white;
+}
 @media ( max-width: 500px ) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -332,7 +336,7 @@ footer {
     order: 1;
     width: 80%;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 .home .walk .walk-img img {
