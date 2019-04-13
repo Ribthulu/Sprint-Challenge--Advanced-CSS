@@ -2,7 +2,7 @@
 .home {
 
   .intro {
-  margin: 0 30px;
+  margin: 0 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -32,17 +32,21 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+
 
     img {
-      width: 28%;
-      margin: 20px 2.5%;
+      width: 25%;
+      margin: 20px 2%;
       border-radius: 20px;
       height: 100%;
+      justify-content: center
     }
   }
 
   .visit-planets {
     padding: 15px;
+    margin: 0 40px;
 
     h3 {
       margin-top: 11px;
@@ -72,6 +76,8 @@
       }
 
       .btn {
+        .btnMixin(white, @btn-bg-color);
+         text-align: center;
       }
     }
 
