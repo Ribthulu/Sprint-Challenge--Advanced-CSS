@@ -1,11 +1,12 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
   <title>SpaceWalkers</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
@@ -16,56 +17,116 @@
 
 <body>
 
- <!-- navigation code here -->
+  <!-- navigation code here -->
 
+  <div class="container top">
+    <nav class="nav-row">
+      <div class="nav-column">
+        <h1 class="nav-title">SpaceWalkers</h1>
+      </div>
+      <div class="nav-column nav-column2">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+      </div>
+    </nav>
+  </div>
   <div class="container home">
-
     <header class="intro">
-       <!-- image code here -->
-
+      <!-- image code here -->
+      <img src="img/main-header.png" alt="photo from space looking at earth in blue and white color">
       <h2>Lift Off</h2>
-    
-      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it
+        with a finger it would fall apart. Seeing this has to change a man.</p>
     </header>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+      <img class="yes-mobile" src="img/blast.png" class="blast" alt="Rocket blasting off">
+      <img class="no-mobile" src="img/sky.png" class="sky" alt="Space sky image">
+      <img class="no-mobile" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
-   
+
     <section class="visit-planets">
-     
+
       <h3>Can We Visit Planets?</h3>
-    
+
       <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
+
       <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
     </section>
-    
+
     <section class="walk">
       <div class="walk-text">
         <h3>Let's Go For A Walk</h3>
 
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
-      
+
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
-        <div class="btn">
-          Sign Up
-        </div>
-      </div>
-      
-      <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+
+        <div class="btn">Sign Up</div>
+
       </div>
 
+      <div class="walk-img">
+        <img src="img/space-walk.png" alt="Space walking astronaut">
+      </div>
     </section>
 
+    <!-- form addition -->
+    <form class="magSubForm" name="magSubForm" method="post">
+      <h3>Enter your information below to subscribe to our magazine!</h3>
+      <p>
+        <select name="title">
+          <option selected="selected"> Mr. </option>
+          <option> Mrs. </option>
+          <option> Ms. </option>
+          <option> Miss </option>
+          <option> Dr. </option>
+          <option> Contessa </option>
+        </select>
+
+        First Name: <input type="text" name="firstName" size="12" />
+        Last Name: <input type="text" name="lastName" size="20" />
+
+        <br />
+
+        Address: <input type="text" name="addr" size="40" />
+
+        <br />
+
+        City: <input type="text" name="city" size="12" />
+        State: <input type="text" name="state" size="4" value="CA" />
+        Zip: <input type="text" name="zip" size="10" />
+
+      </p>
+
+      <table border="0">
+        <tr valign="top">
+          <td>
+            <p>
+              Please select which additional content you would like added:<br />
+              <input type="checkbox" name="check1" value="Computer-Zine" checked="checked" /> Astronaut Biography <br />
+              <input type="checkbox" name="check2" value="Fisher-Zine" /> Inside NASA <br />
+              <input type="checkbox" name="check3" value="Cat-O-Zine" /> Futurology
+            </p>
+          </td>
+        </tr>
+      </table>
+      </p>
+      <p>
+        Subscribe for:
+        <input type="radio" name="years" value="1" /> 1 year ($9.95)
+        <input type="radio" name="years" value="2" checked="checked" /> 2 years ($14.99)
+      </p>
+      <button class="formBtn" type="submit">Send</button>
+      <button class="formBtn" type="reset">Reset Form</button>
+    </form>
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
-
   </div>
 </body>
+
 </html>
