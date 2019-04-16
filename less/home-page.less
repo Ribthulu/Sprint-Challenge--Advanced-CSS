@@ -2,10 +2,7 @@
 .home {
 
   .intro {
-  margin: 0 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  .contentMixin();
 
   @media @mobile{
     margin: 0;
@@ -97,12 +94,13 @@
       }
 
       .btn {
-        .btnMixin(white, @btn-bg-color);
+        .btnMixin(white, @btn-bg-color, 40%);
          text-align: center;
 
          @media @mobile{
            width: 100%;
          }
+       }
 
     .walk-img {
       width: 46%;
@@ -122,5 +120,29 @@
         }
       }
     }
+  }
 
+// form section
+.magSubForm {
+.contentMixin();
+justify-content: center;
+text-align: center;
+@media @mobile{
+  margin: 10px;
+}
+  h3{
+    margin-bottom: 20px;
+  }
+
+  .formBtn {
+    .btnMixin(white, @btn-bg-color, 50%);
+     text-align: center;
+     margin: 0 auto;
+
+     @media @mobile{
+       width: 100%;
+       margin: 10px 0;
+      }
+    }
+  }
 }// home

@@ -11,12 +11,12 @@
 }
 
 
-.btnMixin(@color, @background-color){
+.btnMixin(@color, @background-color, @width){
  font-size: 2rem;
  padding: 10px;
  border-radius: 10px;
  cursor: pointer;
- width: 35%;
+ width: @width;
  color: @color;
  background-color: @background-color;
 
@@ -40,4 +40,11 @@
 max-width: 800px;
 width: 100%;
 margin: 0 auto;
+}
+
+.contentMixin(){
+margin: 0 50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
